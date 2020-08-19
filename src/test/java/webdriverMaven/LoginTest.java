@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class LoginTest {
 		driver.findElement(By.id("identifierId")).sendKeys("harrison@gmail.com");
 //		driver.findElement(By.id("Passwd")).sendKeys("sdfsf");
 		//adding new comment
-		
+		Assert.fail("fail test to check jenkin");
 	}
 	
 	@AfterSuite
